@@ -47,6 +47,9 @@ public class PokerGame {
                 case 2:
                     result = comparePair();
                     break;
+                case 3:
+                    result = compareThreeOfAKind();
+                    break;
             }
         }
         return result;
@@ -68,6 +71,27 @@ public class PokerGame {
             if (player1Pokers.getPokers().get(i).getNumber() == player1Pokers.getPokers().get(i+1).getNumber()) {
                 for (int j = 0; j < player2Pokers.getPokers().size() - 1; j++) {
                     if (player2Pokers.getPokers().get(j).getNumber() == player2Pokers.getPokers().get(j+1).getNumber()) {
+                        if (compareNumber(i, j) == 1) {
+                            return PLAYER_1_WIN;
+                        } else if (compareNumber(i, j) == -1) {
+                            return PLAYER_2_WIN;
+                        }
+                    }
+                }
+            }
+        }
+        return compareHighCard();
+    }
+
+    public String compareThreeOfAKind() {
+        for (int i = 0; i < 3; i++) {
+            boolean isOneAndTwoSame = player1Pokers.getPokers().get(i).getNumber() == player1Pokers.getPokers().get(i+1).getNumber();
+            boolean isOneAndThreeSame = player1Pokers.getPokers().get(i).getNumber() == player1Pokers.getPokers().get(i+2).getNumber();
+            if (isOneAndTwoSame && isOneAndThreeSame) {
+                for (int j = 0; j < 3; j++) {
+                    boolean isOneAndTwoSame2 = player2Pokers.getPokers().get(j).getNumber() == player2Pokers.getPokers().get(j+1).getNumber();
+                    boolean isOneAndThreeSame2 = player2Pokers.getPokers().get(j).getNumber() == player2Pokers.getPokers().get(j+2).getNumber();
+                    if (isOneAndTwoSame2 && isOneAndThreeSame2) {
                         if (compareNumber(i, j) == 1) {
                             return PLAYER_1_WIN;
                         } else if (compareNumber(i, j) == -1) {
