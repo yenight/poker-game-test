@@ -15,8 +15,10 @@ public class PokerTest {
         //given
         Poker poker1 = new Poker("3S");
         Poker poker2 = new Poker("7D");
+
         //when
         boolean result = poker1.compareNumber(poker2.getNumber());
+
         //then
         assertFalse(result);
     }
