@@ -39,12 +39,12 @@ public class PokerGame {
         } else if (player1Pokers.getStatus() < player2Pokers.getStatus()) {
             result = PLAYER_2_WIN;
         } else {
-            System.out.println();
             switch (player1Pokers.getStatus()) {
                 case 0:
                     result = compareHighCard();
                     break;
                 case 1:
+                case 2:
                     result = comparePair();
                     break;
             }
