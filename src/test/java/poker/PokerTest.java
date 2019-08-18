@@ -115,7 +115,7 @@ public class PokerTest {
     }
 
     @Test
-    public void two_pair_compare_pair_should_return_player2_win_when_input_6S_6D_3H_3S_9S_8S_8C_TC_9C_5C () {
+    public void two_pair_compare_pair_should_return_player1_win_when_input_6S_6D_3H_3S_9S_8S_8C_TC_9C_5C () {
         //given
         String[] pokers = {"6S", "6D", "3H", "3S", "9S", "8S", "8C", "TC", "9C", "5C"};
         PokerGame pokerGame = new PokerGame(pokers);
