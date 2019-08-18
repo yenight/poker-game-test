@@ -62,7 +62,7 @@ public class PokerGame {
     public String comparePair() {
         for (int i = 0; i < player1Pokers.getPokers().size() - 1; i++) {
             if (player1Pokers.getPokers().get(i).getNumber() == player1Pokers.getPokers().get(i+1).getNumber()) {
-                for (int j = 0; i < player2Pokers.getPokers().size() - 1; j++) {
+                for (int j = 0; j < player2Pokers.getPokers().size() - 1; j++) {
                     if (player2Pokers.getPokers().get(j).getNumber() == player2Pokers.getPokers().get(j+1).getNumber()) {
                         if (compareNumber(i, j) == 1) {
                             return PLAYER_1_WIN;
