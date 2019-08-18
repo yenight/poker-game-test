@@ -75,6 +75,19 @@ public class PokerTest {
         assertEquals("draw", result);
     }
 
+    @Test
+    public void highCard_should_return_player1_win_when_input_AS_AD_3H_6S_9S_2S_6C_TC_9C_5C () {
+        //given
+        String[] pokers = {"AS", "AD", "3H", "6S", "9S", "2S", "6C", "TC", "9C", "5C"};
+        PokerGame pokerGame = new PokerGame(pokers);
+
+        //when
+        String result = pokerGame.compareHighCard();
+
+        //then
+        assertEquals("draw", result);
+    }
+
 
 
 }
