@@ -50,9 +50,9 @@ public class PokerGame {
 
     public String compareHighCard() {
         for (int i = player1Pokers.getPokers().size() - 1; i >= 0; i--) {
-            if (compareNumber(i) == 1) {
+            if (compareNumber(i, i) == 1) {
                 return PLAYER_1_WIN;
-            } else if (compareNumber(i) == -1) {
+            } else if (compareNumber(i, i) == -1) {
                 return PLAYER_2_WIN;
             }
         }
@@ -64,18 +64,16 @@ public class PokerGame {
             if (player1Pokers.getPokers().get(i).getNumber() == player1Pokers.getPokers().get(i+1).getNumber()) {
                 for (int j = 0; i < player2Pokers.getPokers().size() - 1; j++) {
                     if (player2Pokers.getPokers().get(j).getNumber() == player2Pokers.getPokers().get(j+1).getNumber()) {
-                        if (compareNumber(i) == 1) {
+                        if (compareNumber(i, j) == 1) {
                             return PLAYER_1_WIN;
-                        } else if (compareNumber(i) == -1) {
+                        } else if (compareNumber(i, j) == -1) {
                             return PLAYER_2_WIN;
-                        } else {
-                            return compareHighCard();
                         }
                     }
                 }
             }
         }
-        return "None";
+        return compareHighCard();
     }
 
     public void isPair(PlayerPokers playerPokers) {
@@ -86,8 +84,8 @@ public class PokerGame {
         }
     }
 
-    public int compareNumber(int i) {
-        return player1Pokers.getPokers().get(i).compareNumber(player2Pokers.getPokers().get(i).getNumber());
+    public int compareNumber(int i, int j) {
+        return player1Pokers.getPokers().get(i).compareNumber(player2Pokers.getPokers().get(j).getNumber());
     }
 
     public void addPlayerPoker(String[] pokers) {
