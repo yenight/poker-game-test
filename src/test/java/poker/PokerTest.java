@@ -46,7 +46,7 @@ public class PokerTest {
         String result = pokerGame.compareHighCard();
 
         //then
-        assertEquals(null, result);
+        assertEquals("player1 win", result);
     }
 
 

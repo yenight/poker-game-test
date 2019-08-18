@@ -10,9 +10,13 @@ import java.util.stream.Stream;
 
 public class PokerGame {
 
+    public static final String PLAYER_2_WIN = "player2 win";
+    public static final String PLAYER_1_WIN = "player1 win";
+    public static final String DRAW = "draw";
+
     private String[] pokers;
-    private List<Poker> player1Pokers;
-    private List<Poker> player2Pokers;
+    private List<Poker> player1Pokers = new ArrayList<>();
+    private List<Poker> player2Pokers = new ArrayList<>();
 
     public PokerGame(String[] pokers) {
         this.pokers = pokers;
@@ -26,16 +30,20 @@ public class PokerGame {
     }
 
     public String compareHighCard() {
-//        Collections.sort(player1);
-//        Collections.sort(player2);
-//
-//        for (int i = player1.size() - 1; i <= 0; i--) {
-//            if (player1.get(i).equals(player2.get(i))) {
-//
-//            }
-//        }
+        Collections.sort(player1Pokers);
+        Collections.sort(player2Pokers);
 
+        for (int i = player1Pokers.size() - 1; i >= 0; i--) {
+            if (compareNumber(i) == 1) {
+                return PLAYER_1_WIN;
+            } else if (compareNumber(i) == -1) {
+                return PLAYER_2_WIN;
+            }
+        }
+        return DRAW;
+    }
 
-        return null;
+    public int compareNumber(int i) {
+        return player1Pokers.get(i).compareNumber(player2Pokers.get(i).getNumber());
     }
 }
