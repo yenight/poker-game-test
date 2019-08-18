@@ -128,6 +128,16 @@ public class PokerGame {
         }
     }
 
+    public void isStraight(PlayerPokers playerPokers) {
+        boolean isTwoMoreThanOne1 = playerPokers.getPokers().get(0).getNumber() + 1 == playerPokers.getPokers().get(1).getNumber();
+        boolean isThreeMoreThanOne1 = playerPokers.getPokers().get(0).getNumber() + 2 == playerPokers.getPokers().get(2).getNumber();
+        boolean isFouroMoreThanOne1 = playerPokers.getPokers().get(0).getNumber() + 3 == playerPokers.getPokers().get(3).getNumber();
+        boolean isFiveMoreThanOne1 = playerPokers.getPokers().get(0).getNumber() + 4 == playerPokers.getPokers().get(4).getNumber();
+        if (isTwoMoreThanOne1 && isThreeMoreThanOne1 && isFouroMoreThanOne1 && isFiveMoreThanOne1) {
+            playerPokers.setStatus(STRAIGHT);
+        }
+    }
+
     public int compareNumber(int i, int j) {
         return player1Pokers.getPokers().get(i).compareNumber(player2Pokers.getPokers().get(j).getNumber());
     }
@@ -148,5 +158,8 @@ public class PokerGame {
 
         isThreeOfAKind(player1Pokers);
         isThreeOfAKind(player2Pokers);
+
+        isStraight(player1Pokers);
+        isStraight(player2Pokers);
     }
 }
