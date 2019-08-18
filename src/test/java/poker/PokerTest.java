@@ -63,7 +63,7 @@ public class PokerTest {
     }
 
     @Test
-    public void highCard_should_return_player1_win_when_input_3S_4D_TH_5S_9S_3H_4C_TC_9C_5C () {
+    public void highCard_should_return_draw_when_input_3S_4D_TH_5S_9S_3H_4C_TC_9C_5C () {
         //given
         String[] pokers = {"3S", "4D", "TH", "5S", "9S", "3H", "4C", "TC", "9C", "5C"};
         PokerGame pokerGame = new PokerGame(pokers);
@@ -76,7 +76,7 @@ public class PokerTest {
     }
 
     @Test
-    public void highCard_should_return_player1_win_when_input_AS_AD_3H_6S_9S_2S_6C_TC_9C_5C () {
+    public void highCard_compare_pair_should_return_player1_win_when_input_AS_AD_3H_6S_9S_2S_6C_TC_9C_5C () {
         //given
         String[] pokers = {"AS", "AD", "3H", "6S", "9S", "2S", "6C", "TC", "9C", "5C"};
         PokerGame pokerGame = new PokerGame(pokers);
