@@ -166,5 +166,17 @@ public class PokerTest {
         assertEquals("player1 win", result);
     }
 
+    @Test
+    public void three_compare_straight_should_return_player2_win_when_input_6S_9D_9H_4S_9S_3S_4C_5C_6C_7C () {
+        //given
+        String[] pokers = {"6S", "9D", "9H", "4S", "9S", "3S", "4C", "5C", "6C", "7C"};
+        PokerGame pokerGame = new PokerGame(pokers);
+
+        //when
+        String result = pokerGame.compare();
+
+        //then
+        assertEquals("player2 win", result);
+    }
 
 }
