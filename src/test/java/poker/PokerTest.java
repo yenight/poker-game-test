@@ -63,16 +63,16 @@ public class PokerTest {
     }
 
     @Test
-    public void highCard_should_return_player1_win_when_input_3S_4D_JH_6S_9S_6S_3C_JC_9C_5C () {
+    public void highCard_should_return_player1_win_when_input_3S_4D_TH_5S_9S_3H_4C_TC_9C_5C () {
         //given
-        String[] pokers = {"3S", "4D", "JH", "6S", "9S", "6S", "3C", "JC", "9C", "5C"};
+        String[] pokers = {"3S", "4D", "TH", "5S", "9S", "3H", "4C", "TC", "9C", "5C"};
         PokerGame pokerGame = new PokerGame(pokers);
 
         //when
         String result = pokerGame.compareHighCard();
 
         //then
-        assertEquals("player2 win", result);
+        assertEquals("draw", result);
     }
 
 
