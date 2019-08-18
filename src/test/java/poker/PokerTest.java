@@ -82,10 +82,10 @@ public class PokerTest {
         PokerGame pokerGame = new PokerGame(pokers);
 
         //when
-        String result = pokerGame.compareHighCard();
+        String result = pokerGame.compare();
 
         //then
-        assertEquals("draw", result);
+        assertEquals("player1 win", result);
     }
 
 

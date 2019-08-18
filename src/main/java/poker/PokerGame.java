@@ -29,19 +29,20 @@ public class PokerGame {
 
     public PokerGame(String[] pokers) {
         this.pokers = pokers;
-        for (int i = 0; i < pokers.length; i++) {
-            if (i < 5) {
-                player1Pokers.getPokers().add(new Poker(pokers[i]));
-            } else {
-                player2Pokers.getPokers().add(new Poker(pokers[i]));
-            }
+        this.addPlayerPoker(pokers);
+    }
+
+    public String compare() {
+        if (player1Pokers.getStatus() > player2Pokers.getStatus()) {
+            return PLAYER_1_WIN;
+        } else if (player1Pokers.getStatus() < player2Pokers.getStatus()) {
+            return PLAYER_2_WIN;
+        } else {
+            return compareHighCard();
         }
     }
 
     public String compareHighCard() {
-        Collections.sort(player1Pokers.getPokers());
-        Collections.sort(player2Pokers.getPokers());
-
         for (int i = player1Pokers.getPokers().size() - 1; i >= 0; i--) {
             if (compareNumber(i) == 1) {
                 return PLAYER_1_WIN;
@@ -52,17 +53,30 @@ public class PokerGame {
         return DRAW;
     }
 
-    public void isPair(List<Poker> playerPokers) {
-        for (int i = 0; i < playerPokers.size(); i++) {
-            if (playerPokers.get(i).getNumber() == playerPokers.get(i+1).getNumber()) {
-
+    public void isPair(PlayerPokers playerPokers) {
+        for (int i = 0; i < playerPokers.getPokers().size() - 1; i++) {
+            if (playerPokers.getPokers().get(i).getNumber() == playerPokers.getPokers().get(i+1).getNumber()) {
+                playerPokers.setStatus(A_PAIR);
             }
         }
     }
 
-
-
     public int compareNumber(int i) {
         return player1Pokers.getPokers().get(i).compareNumber(player2Pokers.getPokers().get(i).getNumber());
+    }
+
+    public void addPlayerPoker(String[] pokers) {
+        for (int i = 0; i < pokers.length; i++) {
+            if (i < 5) {
+                player1Pokers.getPokers().add(new Poker(pokers[i]));
+            } else {
+                player2Pokers.getPokers().add(new Poker(pokers[i]));
+            }
+        }
+        Collections.sort(player1Pokers.getPokers());
+        Collections.sort(player2Pokers.getPokers());
+
+        isPair(player1Pokers);
+        isPair(player2Pokers);
     }
 }

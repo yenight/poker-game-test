@@ -4,6 +4,8 @@
     <list default="true" id="7bf7be5b-b4c4-41c3-ae51-35a29596e8b3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/poker/PokerGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/poker/PokerGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/poker/PokerGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/poker/PokerGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/poker/PokerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/poker/PokerTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,20 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/poker/PokerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-34">
-              <caret line="65" column="84" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="84" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/poker/PokerGame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="28" selection-start-line="28" selection-end-line="28" selection-end-column="45" />
+            <state relative-caret-position="251">
+              <caret line="84" column="37" selection-start-line="84" selection-start-column="37" selection-end-line="84" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,10 +50,33 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/poker/PokerGame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/poker/PlayerPokers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            <state relative-caret-position="101">
+              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#140#141#0" expanded="true" />
+                <element signature="e#165#166#0" expanded="true" />
+                <element signature="e#204#205#0" expanded="true" />
+                <element signature="e#233#234#0" expanded="true" />
+                <element signature="e#263#264#0" expanded="true" />
+                <element signature="e#292#293#0" expanded="true" />
+                <element signature="e#333#334#0" expanded="true" />
+                <element signature="e#369#370#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,6 +114,7 @@
         <option value="$PROJECT_DIR$/src/test/java/sales/SalesAppTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/poker/Poker.java" />
         <option value="$PROJECT_DIR$/src/test/java/poker/PokerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/poker/PlayerPokers.java" />
         <option value="$PROJECT_DIR$/src/main/java/poker/PokerGame.java" />
       </list>
     </option>
@@ -229,7 +243,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PokerTest">
+  <component name="RunManager" selected="JUnit.PokerTest.highCard_compare_pair_should_return_player1_win_when_input_AS_AD_3H_6S_9S_2S_6C_TC_9C_5C">
     <configuration name="PokerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit_test" />
       <extension name="coverage">
@@ -241,6 +255,22 @@
       <option name="PACKAGE_NAME" value="poker" />
       <option name="MAIN_CLASS_NAME" value="poker.PokerTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PokerTest.highCard_compare_pair_should_return_player1_win_when_input_AS_AD_3H_6S_9S_2S_6C_TC_9C_5C" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junit_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="poker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="poker" />
+      <option name="MAIN_CLASS_NAME" value="poker.PokerTest" />
+      <option name="METHOD_NAME" value="highCard_compare_pair_should_return_player1_win_when_input_AS_AD_3H_6S_9S_2S_6C_TC_9C_5C" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -277,22 +307,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PokerTest.highCard_should_return_player1_win_when_input_3S_4D_TH_6S_9S_6S_3C_TC_9C_5C" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="junit_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="poker.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="poker" />
-      <option name="MAIN_CLASS_NAME" value="poker.PokerTest" />
-      <option name="METHOD_NAME" value="highCard_should_return_player1_win_when_input_3S_4D_TH_6S_9S_6S_3C_TC_9C_5C" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PokerTest.highCard_should_return_player1_win_when_input_AS_AD_3H_6S_9S_2S_6C_TC_9C_5C" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit_test" />
       <extension name="coverage">
@@ -311,11 +325,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PokerTest.highCard_compare_pair_should_return_player1_win_when_input_AS_AD_3H_6S_9S_2S_6C_TC_9C_5C" />
         <item itemvalue="JUnit.PokerTest" />
         <item itemvalue="JUnit.PokerTest.highCard_should_return_player1_win_when_input_3S_4D_JH_6S_9S_6S_3C_TC_9C_5C" />
         <item itemvalue="JUnit.PokerTest.highCard_should_return_player1_win_when_input_AS_AD_3H_6S_9S_2S_6C_TC_9C_5C" />
         <item itemvalue="JUnit.PokerTest.highCard_should_return_player1_win_when_input_3S_4D_TH_5S_9S_3H_4C_TC_9C_5C" />
-        <item itemvalue="JUnit.PokerTest.highCard_should_return_player1_win_when_input_3S_4D_TH_6S_9S_6S_3C_TC_9C_5C" />
       </list>
     </recent_temporary>
   </component>
@@ -329,7 +343,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565934507747</updated>
-      <workItem from="1566102173364" duration="11264000" />
+      <workItem from="1566102173364" duration="12269000" />
     </task>
     <task id="LOCAL-00001" summary="[test: highCard_should_return_true_when_player1_is_6D_and_player2_is_4C]">
       <created>1566110514994</created>
@@ -415,22 +429,17 @@
       <option name="project" value="LOCAL" />
       <updated>1566114003153</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="[feat: implement playerPoker class and refactor poker game class]">
+      <created>1566114937284</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1566114937284</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PokerTest_highCard_should_return_true_when_player1_is_3S_and_player2_is_7D - 2019.08.18 at 14h 54m 05s.xml">
-      <configuration name="PokerTest.highCard_should_return_true_when_player1_is_3S_and_player2_is_7D" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PokerTest_highCard_should_return_true_when_player1_is_2S_and_player2_is_2D - 2019.08.18 at 14h 54m 13s.xml">
-      <configuration name="PokerTest.highCard_should_return_true_when_player1_is_2S_and_player2_is_2D" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PokerTest_highCard_should_return_player1_win_when_input_3S_4D_JH_6S_9S_6S_3C_TC_9C_5C - 2019.08.18 at 15h 15m 32s.xml">
-      <configuration name="PokerTest.highCard_should_return_player1_win_when_input_3S_4D_JH_6S_9S_6S_3C_TC_9C_5C" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PokerTest_highCard_should_return_player1_win_when_input_3S_4D_JH_6S_9S_6S_3C_TC_9C_5C - 2019.08.18 at 15h 27m 59s.xml">
-      <configuration name="PokerTest.highCard_should_return_player1_win_when_input_3S_4D_JH_6S_9S_6S_3C_TC_9C_5C" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PokerTest_highCard_should_return_player1_win_when_input_3S_4D_JH_6S_9S_6S_3C_TC_9C_5C - 2019.08.18 at 15h 28m 42s.xml">
       <configuration name="PokerTest.highCard_should_return_player1_win_when_input_3S_4D_JH_6S_9S_6S_3C_TC_9C_5C" configurationId="JUnit" />
     </history-entry>
@@ -449,15 +458,27 @@
     <history-entry file="PokerTest_highCard_should_return_player1_win_when_input_AS_AD_3H_6S_9S_2S_6C_TC_9C_5C - 2019.08.18 at 15h 38m 29s.xml">
       <configuration name="PokerTest.highCard_should_return_player1_win_when_input_AS_AD_3H_6S_9S_2S_6C_TC_9C_5C" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PokerTest - 2019.08.18 at 15h 54m 15s.xml">
+      <configuration name="PokerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PokerTest_highCard_should_return_player1_win_when_input_3S_4D_JH_6S_9S_6S_3C_TC_9C_5C - 2019.08.18 at 15h 54m 54s.xml">
+      <configuration name="PokerTest.highCard_should_return_player1_win_when_input_3S_4D_JH_6S_9S_6S_3C_TC_9C_5C" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PokerTest - 2019.08.18 at 15h 54m 59s.xml">
+      <configuration name="PokerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PokerTest - 2019.08.18 at 16h 01m 21s.xml">
+      <configuration name="PokerTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11264000" />
+    <option name="totallyTimeSpent" value="12269000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3" y="23" width="1400" height="821" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2533137" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2533137" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -468,7 +489,7 @@
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2825789" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2825789" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39917696" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -535,7 +556,8 @@
     <MESSAGE value="[test: highCard_should_return_player1_win_when_input_3S_4D_TH_5S_9S_3H_4C_TC_9C_5C]" />
     <MESSAGE value="[test: highCard_should_return_player1_win_when_input_AS_AD_3H_6S_9S_2S_6C_TC_9C_5C]" />
     <MESSAGE value="[test: change name highCard_compare_pair_should_return_player1_win_when_input_AS_AD_3H_6S_9S_2S_6C_TC_9C_5C and highCard_should_return_draw_when_input_3S_4D_TH_5S_9S_3H_4C_TC_9C_5C]" />
-    <option name="LAST_COMMIT_MESSAGE" value="[test: change name highCard_compare_pair_should_return_player1_win_when_input_AS_AD_3H_6S_9S_2S_6C_TC_9C_5C and highCard_should_return_draw_when_input_3S_4D_TH_5S_9S_3H_4C_TC_9C_5C]" />
+    <MESSAGE value="[feat: implement playerPoker class and refactor poker game class]" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat: implement playerPoker class and refactor poker game class]" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/parking/ParkingStrategy.java">
@@ -651,6 +673,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/poker/PokerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="84" column="37" selection-start-line="84" selection-start-column="37" selection-end-line="84" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/poker/Poker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="885">
@@ -666,30 +698,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/poker/PokerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/poker/PlayerPokers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="65" column="84" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="84" />
+        <state relative-caret-position="101">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#140#141#0" expanded="true" />
+            <element signature="e#165#166#0" expanded="true" />
+            <element signature="e#204#205#0" expanded="true" />
+            <element signature="e#233#234#0" expanded="true" />
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
+            <element signature="e#333#334#0" expanded="true" />
+            <element signature="e#369#370#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/poker/PokerGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="28" selection-start-line="28" selection-end-line="28" selection-end-column="45" />
+        <state relative-caret-position="357">
+          <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/poker/PlayerPokers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
         </state>
       </provider>
     </entry>
