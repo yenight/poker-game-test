@@ -38,8 +38,14 @@ public class PokerGame {
         } else if (player1Pokers.getStatus() < player2Pokers.getStatus()) {
             return PLAYER_2_WIN;
         } else {
-            return compareHighCard();
+            switch (player1Pokers.getStatus()) {
+                case 0:
+                    return compareHighCard();
+                case 1:
+                    return comparePair();
+            }
         }
+        return "None";
     }
 
     public String compareHighCard() {
@@ -51,6 +57,25 @@ public class PokerGame {
             }
         }
         return DRAW;
+    }
+
+    public String comparePair() {
+        for (int i = 0; i < player1Pokers.getPokers().size() - 1; i++) {
+            if (player1Pokers.getPokers().get(i).getNumber() == player1Pokers.getPokers().get(i+1).getNumber()) {
+                for (int j = 0; i < player2Pokers.getPokers().size() - 1; j++) {
+                    if (player2Pokers.getPokers().get(j).getNumber() == player2Pokers.getPokers().get(j+1).getNumber()) {
+                        if (compareNumber(i) == 1) {
+                            return PLAYER_1_WIN;
+                        } else if (compareNumber(i) == -1) {
+                            return PLAYER_2_WIN;
+                        } else {
+                            return compareHighCard();
+                        }
+                    }
+                }
+            }
+        }
+        return "None";
     }
 
     public void isPair(PlayerPokers playerPokers) {

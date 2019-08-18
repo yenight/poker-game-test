@@ -7,9 +7,10 @@ public class PlayerPokers {
 
     List<Poker> pokers = new ArrayList<>();
     int status;
+    public static final int HIGH_CARD = 0;
 
     public PlayerPokers() {
-        status = 0;
+        status = HIGH_CARD;
     }
 
     public List<Poker> getPokers() {
