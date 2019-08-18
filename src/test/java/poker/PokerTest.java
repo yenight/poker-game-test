@@ -17,10 +17,10 @@ public class PokerTest {
         Poker poker2 = new Poker("7D");
 
         //when
-        boolean result = poker1.compareNumber(poker2.getNumber());
+        int result = poker1.compareNumber(poker2.getNumber());
 
         //then
-        assertFalse(result);
+        assertEquals(-1, result);
     }
 
     @Test
@@ -30,10 +30,10 @@ public class PokerTest {
         Poker poker2 = new Poker("2D");
 
         //when
-        boolean result = poker1.compareNumber(poker2.getNumber());
+        int result = poker1.compareNumber(poker2.getNumber());
 
         //then
-        assertFalse(result);
+        assertEquals(0, result);
     }
 
 }

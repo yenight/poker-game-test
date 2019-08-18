@@ -41,8 +41,14 @@ public class Poker {
         return 0;
     }
 
-    public boolean compareNumber(int number2) {
-        return this.number > number2;
+    public int compareNumber(int number2) {
+        if (this.number > number2) {
+            return 1;
+        } else if (this.number == number2) {
+            return 0;
+        } else {
+            return -1;
+        }
     }
 
 }
