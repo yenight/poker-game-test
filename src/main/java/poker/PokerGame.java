@@ -94,6 +94,16 @@ public class PokerGame {
         }
     }
 
+    public void isThreeOfAKind(PlayerPokers playerPokers) {
+        for (int i = 0; i < 3; i++) {
+            boolean isOneAndTwoSame = playerPokers.getPokers().get(i).getNumber() == playerPokers.getPokers().get(i+1).getNumber();
+            boolean isOneAndThreeSame = playerPokers.getPokers().get(i).getNumber() == playerPokers.getPokers().get(i+2).getNumber();
+            if (isOneAndTwoSame && isOneAndThreeSame) {
+                playerPokers.setStatus(THREE_OF_A_KIND);
+            }
+        }
+    }
+
     public int compareNumber(int i, int j) {
         return player1Pokers.getPokers().get(i).compareNumber(player2Pokers.getPokers().get(j).getNumber());
     }
@@ -111,5 +121,8 @@ public class PokerGame {
 
         isPair(player1Pokers);
         isPair(player2Pokers);
+
+        isThreeOfAKind(player1Pokers);
+        isThreeOfAKind(player2Pokers);
     }
 }
