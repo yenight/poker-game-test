@@ -23,4 +23,17 @@ public class PokerTest {
         assertFalse(result);
     }
 
+    @Test
+    public void highCard_should_return_true_when_player1_is_2S_and_player2_is_2D () {
+        //given
+        Poker poker1 = new Poker("2S");
+        Poker poker2 = new Poker("2D");
+
+        //when
+        boolean result = poker1.compareNumber(poker2.getNumber());
+
+        //then
+        assertFalse(result);
+    }
+
 }
