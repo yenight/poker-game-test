@@ -24,5 +24,8 @@ public class Poker {
         return pokerColor;
     }
 
+    public boolean compareNumber(int number2) {
+        return true;
+    }
 
 }
